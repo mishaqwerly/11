@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="css/mstyle.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="http://resources/demos/style.css">
+</head>
+<body>
+
+  <div class="section4">
+      <div class="container">
+          <div class="row justify-content-end">
+              <div class="col-7">
+                  <form class="form-section">
+                    <div class="form-page-1"></div>
+                    <div class="head-form text-center">
+                      <div class="fotm-title">Заполните анкету в 3 шага</div>
+                      <div class="sub-title">Александр подготовит для Вас индивидуальное предложение исходя из задач и потребностей</div>
+                    </div>
+                    <div class="progress-scale d-flex justify-content-center align-items-center">
+                      <div class="form-page active-form-page form-page-1 d-flex align-items-center justify-content-center">1</div>
+                      <div class="form-page-separator"></div>
+                      <div class="form-page form-page-2 d-flex align-items-center justify-content-center">2</div>
+                      <div class="form-page-separator"></div>
+                      <div class="form-page form-page-3 d-flex align-items-center justify-content-center">3</div>
+                    </div>
+                    <div class="form-body">
+                      <div class="apartment-area">
+                        <div class="child-form-title">Укажите площадь квартиры</div>
+                        <div class="apartment-area-slider">
+                          <div class="d-flex align-items-center justify-content-center">
+                            <div class="minus-area area-btn"></div>
+                            <div id="slider-range-min"></div>
+                            <div class="plus-area area-btn"></div>
+                          </div>
+                          <p>
+                            <label for="amount"></label>
+                            <input class="amount-value" type="text" id="amount" readonly style="border:0; color:#000; font-weight:bold; ">
+                          </p>
+                        </div>  
+                      </div>
+                      <div class="rooms-amount square-inputs">
+                        <div class="child-form-title">Укажите количество комнат необходимых в квартире</div>
+                        <div class="rooms-amount-body d-flex justify-content-between">
+                          <label><input class="rooms-input"  type="radio" name="rooms-amount" value="1 room"><i class="rooms-amount-number-1"></i></label>
+                          <label><input class="rooms-input"  type="radio" name="rooms-amount" value="2 rooms"><i class="rooms-amount-number-2"></i></label>
+                          <label><input class="rooms-input"  type="radio" name="rooms-amount" value="3 rooms"><i class="rooms-amount-number-3"></i></label>
+                          <label><input class="rooms-input"  type="radio" name="rooms-amount" value="4 rooms"><i class="rooms-amount-number-4"></i></label>
+                          <label><input class="rooms-input"  type="radio" name="rooms-amount" value="5 rooms"><i class="rooms-amount-number-5"></i></label>
+                          <label><input class="rooms-input"  type="radio" name="rooms-amount" value="6+ rooms"><i class="rooms-amount-number-6"></i></label>
+                        </div>
+                      </div>
+                      <div class="interior-design">
+                        <div class="interior-design-title">Ваши предпочтения по стилям</div>
+                        <div class="interior-design-body d-flex">
+                          <div class="interior-design-input-column-1 d-flex flex-column">
+                            <label><input class="design-input" type="radio" name="interior-design" value="modern-classic"><i></i>Современная классика</label>
+                            <label><input class="design-input" type="radio" name="interior-design" value="loft"><i></i>Лофт</label>
+                            <label><input class="design-input" type="radio" name="interior-design" value="minimalist"><i></i>Минимализм</label>
+                          </div>
+                          <div class="interior-design-input-column-2 d-flex flex-column">
+                            <label><input class="design-input" type="radio" name="interior-design" value="pop-art"><i></i>Поп-арт</label>
+                            <label><input class="design-input" type="radio" name="interior-design" value="futurism"><i></i>Футуризм</label>
+                            <label><input class="design-input" type="radio" name="interior-design" value="scandinavian "><i></i>Скандинавский</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <div class="next-page-btn">ДАЛЕЕ<span></span></div>
+                      </div>
+                    </div>
+                  </form>
+
+                  <!-- form-2 -->
+                  <form class="form-section">
+                    <div class="form-page-1"></div>
+                    <div class="head-form text-center">
+                      <div class="fotm-title">Заполните анкету в 3 шага</div>
+                      <div class="sub-title">Александр подготовит для Вас индивидуальное предложение исходя из задач и потребностей</div>
+                    </div>
+                    <div class="progress-scale d-flex justify-content-center align-items-center">
+                      <div class="form-page active-form-page form-page-1 d-flex align-items-center justify-content-center">1</div>
+                      <div class="form-page-separator"></div>
+                      <div class="form-page active-form-page form-page-2 d-flex align-items-center justify-content-center">2</div>
+                      <div class="form-page-separator"></div>
+                      <div class="form-page form-page-3 d-flex align-items-center justify-content-center">3</div>
+                    </div>
+                    <div class="form-body">
+                      <div class="amount-person square-inputs">
+                        <div class="child-form-title">Укажите состав Вашей семьи</div>
+                        <div class="amount-person-body d-flex justify-content-between">
+                          <label><input class="person-input"  type="radio" name="person-amount" value="1 person"><i class="person-amount-number-1"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="2 person"><i class="person-amount-number-2"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="3 person"><i class="person-amount-number-3"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="4 person"><i class="person-amount-number-4"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="5 person"><i class="person-amount-number-5"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="6+ person"><i class="person-amount-number-6"></i></label>
+                       </div>
+                      </div>
+                      <div class="furniture-design">
+                        <div class="furniture-design-title">Вани предпочтения к помещениям и мебели</div>
+                        <div class="furniture-design-body">
+                          <div class="bathroom-design-inputs">
+                            <label><input class="furniture-input" type="radio" name="bathroom-furniture-design" value="bathroom"><i></i>Ванная</label>
+                            <label><input class="furniture-input" type="radio" name="bathroom-furniture-design" value="shower"><i></i>Душ</label>
+                          </div>
+                          <div class="cook-room-design-inputs">
+                            <label><input class="cook-room-input" type="radio" name="cook-room-furniture-design" value="kitchen"><i></i>Кухня</label>
+                            <label><input class="cook-room-input" type="radio" name="cook-room-furniture-design" value="kitchen-living-room"><i></i>Кухня-гостинная</label>
+                          </div>
+                          <div class="bar-room-design-inputs">
+                            <label><input class="bar-room-input" type="radio" name="bar-room-furniture-design" value="bar"><i></i>Бар</label>
+                            <label><input class="bar-room-input" type="radio" name="bar-room-furniture-design" value="shower-room"><i></i>Душ</label>
+                          </div>
+                          <div class="dressing-room-design-inputs">
+                            <label><input class="dressing-room-input" type="radio" name="dressing-room-furniture-design" value="wardrobe"><i></i>Гардеробная</label>
+                            <label><input class="dressing-room-input" type="radio" name="dressing-room-furniture-design" value="cupboard"><i></i>Шкаф</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div class="back-page-btn form-btn"><span></span>НАЗАД</div>
+                        <div class="next-page-btn form-btn">ДАЛЕЕ<span></span></div>
+                      </div>
+                    </div>
+                  </form>
+                  <!-- form-3 -->
+                  <form class="form-section">
+                    <div class="form-page-1"></div>
+                    <div class="head-form text-center">
+                      <div class="fotm-title">Заполните анкету в 3 шага</div>
+                      <div class="sub-title">Александр подготовит для Вас индивидуальное предложение исходя из задач и потребностей</div>
+                    </div>
+                    <div class="progress-scale d-flex justify-content-center align-items-center">
+                      <div class="form-page active-form-page form-page-1 d-flex align-items-center justify-content-center">1</div>
+                      <div class="form-page-separator"></div>
+                      <div class="form-page active-form-page form-page-2 d-flex align-items-center justify-content-center">2</div>
+                      <div class="form-page-separator"></div>
+                      <div class="form-page active-form-page form-page-3 d-flex align-items-center justify-content-center">3</div>
+                    </div>
+                    <div class="form-body">
+                      <div class="amount-person square-inputs">
+                        <div class="child-form-title">Укажите состав Вашей семьи</div>
+                        <div class="amount-person-body d-flex justify-content-between">
+                          <label><input class="person-input"  type="radio" name="person-amount" value="1 person"><i class="person-amount-number-1"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="2 person"><i class="person-amount-number-2"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="3 person"><i class="person-amount-number-3"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="4 person"><i class="person-amount-number-4"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="5 person"><i class="person-amount-number-5"></i></label>
+                          <label><input class="person-input"  type="radio" name="person-amount" value="6+ person"><i class="person-amount-number-6"></i></label>
+                       </div>
+                      </div>
+                      <div class="furniture-design">
+                        <div class="furniture-design-title">Вани предпочтения к помещениям и мебели</div>
+                        <div class="furniture-design-body">
+                          <div class="bathroom-design-inputs">
+                            <label><input class="furniture-input" type="radio" name="bathroom-furniture-design" value="bathroom"><i></i>Ванная</label>
+                            <label><input class="furniture-input" type="radio" name="bathroom-furniture-design" value="shower"><i></i>Душ</label>
+                          </div>
+                          <div class="cook-room-design-inputs">
+                            <label><input class="cook-room-input" type="radio" name="cook-room-furniture-design" value="kitchen"><i></i>Кухня</label>
+                            <label><input class="cook-room-input" type="radio" name="cook-room-furniture-design" value="kitchen-living-room"><i></i>Кухня-гостинная</label>
+                          </div>
+                          <div class="bar-room-design-inputs">
+                            <label><input class="bar-room-input" type="radio" name="bar-room-furniture-design" value="bar"><i></i>Бар</label>
+                            <label><input class="bar-room-input" type="radio" name="bar-room-furniture-design" value="shower-room"><i></i>Душ</label>
+                          </div>
+                          <div class="dressing-room-design-inputs">
+                            <label><input class="dressing-room-input" type="radio" name="dressing-room-furniture-design" value="wardrobe"><i></i>Гардеробная</label>
+                            <label><input class="dressing-room-input" type="radio" name="dressing-room-furniture-design" value="cupboard"><i></i>Шкаф</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between">
+                        <div class="back-page-btn form-btn"><span></span>НАЗАД</div>
+                        <div class="next-page-btn form-btn">ДАЛЕЕ<span></span></div>
+                      </div>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+
+<!-- <script>
+$( function() {
+  $( "#slider-range-min" ).slider({
+    range: "min",
+    value: 80,
+    min: 20,
+    max: 700,
+    slide: function( event, ui ) {
+      $( "#amount" ).val( "$" +  ui.value );
+    }
+  });
+  $( "#amount" ).val( $( "$" + "#slider-range-min" ).slider( "value" ) );
+} );
+</script> -->
+
+  <script>
+  $( function() {
+    $( "#slider-range-min" ).slider({
+      range: "min",
+      value: 98,
+      min: 1,
+      max: 700,
+      slide: function( event, ui ) {
+        $( "#amount" ).val( ui.value + " m2");
+      }
+    });
+    $( "#amount" ).val( $( "#slider-range-min" ).slider( "value" ) + " m2" );
+  } );
+  </script>
+
+</body>
+</html>
